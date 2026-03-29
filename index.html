@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">MyPortfolio</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+          aria-controls="navmenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#toolkit">Toolkit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-cta" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center g-4 hero-layout">
+          <div class="col-lg-4">
+            <div class="hero-media">
+              <img
+                src="assets/imagaes/foto.jpg"
+                class="hero-main-photo"
+                alt="Portrait of Rizki Bagas Prasongko"
+              />
+            </div>
+          </div>
+          <div class="col-lg-8 text-center text-lg-start">
+            <p class="hero-kicker">My Portfolio</p>
+            <h1 class="display-4">Hello, I'm Rizki Bagas Prasongko</h1>
+            <p class="lead">Security Researcher • Web3 Enthusiast • Pentester</p>
+            <div class="hero-actions">
+              <a href="#portfolio" class="btn btn-primary btn-lg">View My Work</a>
+              <button
+                type="button"
+                class="btn btn-outline-light btn-lg btn-ghost"
+                data-bs-toggle="modal"
+                data-bs-target="#auditModal"
+              >
+                Request Security Audit
+              </button>
+            </div>
+            <div class="hero-signals">
+              <span>Bug Bounty Mindset</span>
+              <span>Web3 Infra Focus</span>
+              <span>Offensive Security</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <p class="section-kicker">Profile</p>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-text">
+         I am a cybersecurity enthusiast specializing in web application security, vulnerability research, and practical penetration testing. My journey into security began through self-directed learning, driven by curiosity about how systems work and how they can be secured against real-world threats.
+
+Without a formal academic background in computer science, I built my expertise through hands-on experimentation, independent research, and continuous practice in real-world environments. I focus primarily on identifying and analyzing vulnerabilities in web applications, including issues such as Cross-Site Scripting (XSS), insecure API implementations, authentication flaws, and misconfigurations.
+
+My approach to learning cybersecurity is highly practical. I regularly work with security tools and methodologies used by professionals in the industry, including traffic interception, API analysis, vulnerability scanning, and manual testing techniques. I believe that real understanding in security comes from breaking down systems, analyzing their behavior, and learning from each discovery.
+
+In addition to vulnerability research, I also build small security tools and automation scripts to assist with reconnaissance, testing workflows, and data analysis. These projects reflect my interest in combining programming with offensive security techniques.
+
+Currently, my main focus is:
+
+Web Application Security Testing
+
+Bug Bounty Methodology
+
+API Security Analysis
+
+Security Automation & Tool Development
+
+Vulnerability Research
+
+I actively continue improving my skills through continuous research, security labs, bug bounty platforms, and hands-on experimentation. My goal is to grow as a professional security researcher and contribute to making web technologies safer.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <p class="section-kicker">Capabilities</p>
+        <h2 class="section-title">Skills</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card skill-card h-100">
+              <div class="card-body">
+                <h5>Web Security</h5>
+                <p>XSS, SQLi, API Testing</p>
+                <span
+                  class="badge text-bg-primary"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="OWASP Top 10 oriented testing workflow"
+                  >OWASP</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card skill-card h-100">
+              <div class="card-body">
+                <h5>Tools</h5>
+                <p>Burp Suite, Nmap, SQLmap</p>
+                <span
+                  class="badge text-bg-secondary"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Automated recon + manual verification"
+                  >Recon Stack</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card skill-card h-100">
+              <div class="card-body">
+                <h5>Programming</h5>
+                <p>JavaScript, Python, Bash</p>
+                <span
+                  class="badge text-bg-success"
+                  data-bs-toggle="tooltip"
+                  data-bs-title="Scripting for pentest and report automation"
+                  >Automation</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLKIT -->
+    <section id="toolkit" class="section toolkit-section">
+      <div class="container">
+        <h2 class="section-title">Security Workflow Toolkit</h2>
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-7">
+            <div class="accordion" id="securityAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#phaseOne"
+                    aria-expanded="true"
+                    aria-controls="phaseOne"
+                  >
+                    1. Recon & Enumeration
+                  </button>
+                </h2>
+                <div
+                  id="phaseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#securityAccordion"
+                >
+                  <div class="accordion-body">
+                    Mapping attack surface, endpoint discovery, and version
+                    fingerprinting to prepare deep testing.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#phaseTwo"
+                    aria-expanded="false"
+                    aria-controls="phaseTwo"
+                  >
+                    2. Exploitation & Validation
+                  </button>
+                </h2>
+                <div
+                  id="phaseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#securityAccordion"
+                >
+                  <div class="accordion-body">
+                    Manual and assisted exploit testing to confirm impact,
+                    avoid false positives, and identify business risk.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#phaseThree"
+                    aria-expanded="false"
+                    aria-controls="phaseThree"
+                  >
+                    3. Hardening & Reporting
+                  </button>
+                </h2>
+                <div
+                  id="phaseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#securityAccordion"
+                >
+                  <div class="accordion-body">
+                    Delivering clear remediation steps, prioritization by
+                    severity, and secure architecture recommendations.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="card skill-card h-100 toolkit-card">
+              <div class="card-body">
+                <p class="toolkit-label">Coverage Progress</p>
+                <div class="mb-3">
+                  <div class="d-flex justify-content-between">
+                    <span>Web Application</span>
+                    <span class="fw-semibold">90%</span>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Web Application">
+                    <div class="progress-bar" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="d-flex justify-content-between">
+                    <span>API Security</span>
+                    <span class="fw-semibold">82%</span>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="API Security">
+                    <div class="progress-bar" style="width: 82%"></div>
+                  </div>
+                </div>
+                <div>
+                  <div class="d-flex justify-content-between">
+                    <span>Web3 Smart Contract</span>
+                    <span class="fw-semibold">75%</span>
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Web3 Smart Contract">
+                    <div class="progress-bar" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div class="alert alert-warning mt-4 mb-0" role="alert">
+                  Active bug bounty mode: triage in under 24 hours.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section portfolio-section">
+      <div class="container">
+        <p class="section-kicker">Special Pages</p>
+        <h2 class="section-title">Explore My Work</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card portfolio-card h-100">
+              <a class="portfolio-link" href="project-tools.html">
+                <img
+                  src="assets/images/project-tools.jpg"
+                  class="card-img-top"
+                  alt="Project tools page"
+                />
+              </a>
+              <div class="card-body">
+                <h5>Project Tools</h5>
+                <p>Halaman khusus tools yang saya buat sendiri.</p>
+                <a href="project-tools.html" class="btn btn-sm btn-primary"
+                  >Open Page</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card portfolio-card h-100">
+              <a class="portfolio-link" href="sertifikat.html">
+                <img
+                  src="assets/images/photo_2026-03-15_06-09-19.jpg"
+                  class="card-img-top"
+                  alt="Sertifikat page"
+                />
+              </a>
+              <div class="card-body">
+                <h5>Sertifikat</h5>
+                <p>Halaman khusus koleksi sertifikat dan preview hasil.</p>
+                <a href="sertifikat.html" class="btn btn-sm btn-primary"
+                  >Open Page</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card portfolio-card h-100">
+              <a class="portfolio-link" href="bug-bounty-report.html">
+                <img
+                  src="assets/images/photo_2026-03-15_06-09-01.jpg"
+                  class="card-img-top"
+                  alt="Bug bounty report page"
+                />
+              </a>
+              <div class="card-body">
+                <h5>Bug Bounty Report</h5>
+                <p>Halaman khusus dokumentasi dan hasil bug bounty report.</p>
+                <a href="bug-bounty-report.html" class="btn btn-sm btn-primary"
+                  >Open Page</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section text-white">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5">
+            <p class="section-kicker">Private Channel</p>
+            <h2 class="section-title text-white">Contact</h2>
+            <p class="contact-copy">
+              Share your project scope and I will reply with testing strategy.
+            </p>
+            <p class="contact-meta mb-1">
+              Email:
+              <a
+                class="contact-link"
+                href="mailto:rizkibagasprasongko@gmail.com"
+              >
+                rizkibagasprasongko@gmail.com
+              </a>
+            </p>
+            <p class="contact-meta">
+              Github:
+              <a
+                class="contact-link"
+                href="https://github.com/xbagaskii"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                github.com/xbagaskii
+              </a>
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <form id="contactForm" class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="nameInput" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nameInput"
+                    placeholder="Your name"
+                    required
+                  />
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="emailInput" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="emailInput"
+                    placeholder="you@email.com"
+                    required
+                  />
+                  <div class="invalid-feedback">Please enter a valid email.</div>
+                </div>
+                <div class="col-12">
+                  <label for="messageInput" class="form-label">Project Brief</label>
+                  <textarea
+                    class="form-control"
+                    id="messageInput"
+                    rows="4"
+                    placeholder="Describe your target and timeline."
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">
+                    Please provide short project details.
+                  </div>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center flex-wrap gap-2">
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                  <span id="contactSuccess" class="alert alert-success py-2 px-3 mb-0 d-none">
+                    Message queued successfully.
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-note text-center">
+      &copy; <span id="year"></span> Rizki Bagas Prasongko
+    </footer>
+
+    <div
+      class="modal fade"
+      id="auditModal"
+      tabindex="-1"
+      aria-labelledby="auditModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="auditModalLabel">Security Audit Scope</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-3">
+              Pick an engagement model to start collaboration quickly:
+            </p>
+            <ul class="list-group">
+              <li class="list-group-item">Web Application Pentest</li>
+              <li class="list-group-item">API Security Assessment</li>
+              <li class="list-group-item">Web3 Infrastructure Review</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a
+              href="mailto:rizkibagasprasongko@gmail.com?subject=Security%20Audit%20Inquiry"
+              class="btn btn-primary"
+              >Continue to Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

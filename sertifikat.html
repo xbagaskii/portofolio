@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sertifikat | Rizki Bagas Prasongko</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">MyPortfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+          aria-controls="navmenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="project-tools.html">Project Tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="sertifikat.html">Sertifikat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bug-bounty-report.html"
+                >Bug Bounty Report</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section subpage-hero">
+      <div class="container text-center">
+        <p class="section-kicker">Achievement</p>
+        <h1 class="section-title">Sertifikat</h1>
+        <p class="subpage-lead">
+          Berikut adalah sertifikat-sertifikat yang saya peroleh dalam proses pembelajaran dan pengembangan keterampilan di bidang keamanan siber.
+        </p>
+      </div>
+    </section>
+
+    <section class="section subpage-content pt-0">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card portfolio-card h-100">
+              <button
+                type="button"
+                class="preview-link"
+                data-bs-toggle="modal"
+                data-bs-target="#previewModal"
+                data-preview-src="assets/images/photo_2026-03-15_06-09-01.jpg"
+                data-preview-title="Sertifikat Keamanan 1"
+              >
+                <img
+                  src="assets/images/photo_2026-03-15_06-09-01.jpg"
+                  class="card-img-top"
+                  alt="Sertifikat keamanan 1"
+                />
+              </button>
+              <div class="card-body">
+                <h5>Sertifikat Keamanan 1</h5>
+                <p>Klik gambar untuk melihat hasil sertifikat.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card portfolio-card h-100">
+              <button
+                type="button"
+                class="preview-link"
+                data-bs-toggle="modal"
+                data-bs-target="#previewModal"
+                data-preview-src="assets/images/photo_2026-03-15_06-09-19.jpg"
+                data-preview-title="Sertifikat Keamanan 2"
+              >
+                <img
+                  src="assets/images/photo_2026-03-15_06-09-19.jpg"
+                  class="card-img-top"
+                  alt="Sertifikat keamanan 2"
+                />
+              </button>
+              <div class="card-body">
+                <h5>Sertifikat Keamanan 2</h5>
+                <p>Klik gambar untuk melihat hasil sertifikat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-note text-center">
+      &copy; <span id="year"></span> Rizki Bagas Prasongko
+    </footer>
+
+    <div
+      class="modal fade"
+      id="previewModal"
+      tabindex="-1"
+      aria-labelledby="previewModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="previewModalTitle">Preview</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              id="previewModalImage"
+              src="assets/images/photo_2026-03-15_06-09-01.jpg"
+              alt="Preview image"
+              class="img-fluid preview-modal-image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
